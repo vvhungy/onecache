@@ -5,7 +5,7 @@ CXXFLAGS = -std=c++0x -pipe -Wall -W -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 
 INCPATH  = -I./src
 LINK     = g++
 LFLAGS   =
-LIBS     = $(SUBLIBS)  /usr/local/lib/libevent.a /usr/local/lib/libevent_pthreads.a -lrt -pthread /usr/local/lib/libjemalloc.a
+LIBS     = $(SUBLIBS)  /usr/lib64/libevent.so /usr/lib64/libevent_pthreads.so -lrt -pthread /usr/lib64/libjemalloc.so
 ####### Output directory
 
 OBJECTS_DIR = tmp/

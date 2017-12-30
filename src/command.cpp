@@ -100,6 +100,13 @@ static RedisCommand _redisCommand[] = {
     {"SETEX", 5, RedisCommand::SETEX, onStandardKeyCommand, NULL},
     {"SETNX", 5, RedisCommand::SETNX, onStandardKeyCommand, NULL},
 
+    {"TDIGEST.NEW", 11, RedisCommand::TDIGEST_NEW, onStandardKeyCommand, NULL},
+    {"TDIGEST.ADD", 11, RedisCommand::TDIGEST_ADD, onStandardKeyCommand, NULL},
+    {"TDIGEST.MERGE", 13, RedisCommand::TDIGEST_MERGE, onStandardKeyCommand, NULL},
+    {"TDIGEST.CDF", 11, RedisCommand::TDIGEST_CDF, onStandardKeyCommand, NULL},
+    {"TDIGEST.QUANTILE", 16, RedisCommand::TDIGEST_QUANTILE, onStandardKeyCommand, NULL},
+    {"TDIGEST.CENTROIDS", 17, RedisCommand::TDIGEST_CENTROIDS, onStandardKeyCommand, NULL},
+
     {"TTL", 3, RedisCommand::TTL, onStandardKeyCommand, NULL},
     {"TYPE", 4, RedisCommand::TYPE, onStandardKeyCommand, NULL},
 
