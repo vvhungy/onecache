@@ -31,6 +31,7 @@ static RedisCommand _redisCommand[] = {
     {"DEL", 3, RedisCommand::DEL, onDelCommand, NULL},
     {"DECR", 4, RedisCommand::DECR, onStandardKeyCommand, NULL},
     {"DECRBY", 6, RedisCommand::DECRBY, onStandardKeyCommand, NULL},
+    {"ECHO", 4, RedisCommand::ECHO, onStandardKeyCommand, NULL},
     {"EXPIREAT", 8, RedisCommand::EXPIREAT, onStandardKeyCommand, NULL},
     {"EXISTS", 6, RedisCommand::EXISTS, onStandardKeyCommand, NULL},
     {"EXPIRE", 6, RedisCommand::EXPIRE, onStandardKeyCommand, NULL},
