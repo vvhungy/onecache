@@ -91,8 +91,8 @@ class EventLoopThreadPool
 {
 public:
     enum {
-        DefaultThreadCount = 4,
-        MaxThreadCount = 32
+        DefaultThreadCount = 8,
+        MaxThreadCount = 64
     };
 
     EventLoopThreadPool(void);
