@@ -27,6 +27,7 @@ static RedisCommand _redisCommand[] = {
     {"APPEND", 6, RedisCommand::APPEND, onStandardKeyCommand, NULL},
     {"BITCOUNT", 8, RedisCommand::BITCOUNT, onStandardKeyCommand, NULL},
     {"BITPOS", 6, RedisCommand::BITPOS, onStandardKeyCommand, NULL},
+    {"CL.THROTTLE", 11, RedisCommand::CL_THROTTLE, onStandardKeyCommand,  NULL},
     {"DUMP", 4, RedisCommand::DUMP, onStandardKeyCommand, NULL},
     {"DEL", 3, RedisCommand::DEL, onDelCommand, NULL},
     {"DECR", 4, RedisCommand::DECR, onStandardKeyCommand, NULL},

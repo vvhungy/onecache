@@ -32,6 +32,7 @@ public:
         AUTH,
         APPEND,
         BITCOUNT, BITPOS,
+        CL_THROTTLE,
         DUMP,DEL, DECR, DECRBY,
         ECHO, EXPIREAT, EXISTS, EXPIRE,
         GET, GETBIT, GETRANGE, GETSET,
